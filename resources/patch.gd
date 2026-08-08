@@ -3,6 +3,7 @@ class_name ROTHPatch
 
 enum {
 	GDV_DIRECTORY_PATCH,
+	FILES_DIRECTORY_PATCH,
 	LANTERN_PATCH,
 	SKIP_INTRO_PATCH,
 }
@@ -83,7 +84,9 @@ static func patch_install(install: ROTHInstallation, patch_data: Dictionary, pat
 static func _patch_file(filepath: String, patch: Variant, option: Variant = null) -> void:
 	match patch:
 		GDV_DIRECTORY_PATCH:
-			_patch_gdv_path(filepath)
+			_patch_gdv_path(filepath, option)
+		FILES_DIRECTORY_PATCH:
+			_patch_files_path(filepath, option)
 		LANTERN_PATCH:
 			_patch_lantern(filepath, option)
 		SKIP_INTRO_PATCH:
@@ -117,9 +120,10 @@ static func _skip_intro(filepath: String) -> void:
 	pass
 
 
-static func _patch_gdv_path(filepath: String) -> void:
+static func _patch_gdv_path(filepath: String, md5_sum: String = "") -> void:
 	var seek_value: int = 0
-	var md5_sum: String = FileAccess.get_md5(filepath)
+	if md5_sum.is_empty():
+		md5_sum = FileAccess.get_md5(filepath)
 	if (md5_sum == "f0f93c7931b9a678469095d3d7f54c04"
 			or md5_sum == "c11ab446c6d92e4e89d557864aa62997"):
 		seek_value = 145767
@@ -138,6 +142,39 @@ static func _patch_gdv_path(filepath: String) -> void:
 	file.store_8(0x00)
 	file.close()
 
+
+static func _patch_files_path(filepath: String, md5_sum: String = "") -> void:
+	var patch_values: Array = [
+		"d:\\db100.dat".to_ascii_buffer(),
+		"d:\\db200.dat".to_ascii_buffer(),
+		"d:\\db300.dat".to_ascii_buffer(),
+		"d:\\db400.dat".to_ascii_buffer(),
+		"d:\\db500.dat".to_ascii_buffer(),
+		"d:\\ICONS.ALL".to_ascii_buffer(),
+		"d:\\BACKDROP.RAW".to_ascii_buffer(),
+	]
+	var seek_values: Array = []
+	if md5_sum.is_empty():
+		md5_sum = FileAccess.get_md5(filepath)
+	if md5_sum == "f0f93c7931b9a678469095d3d7f54c04":
+		seek_values = [0x7284e, 0x72834, 0x72841, 0x72869, 0x7285c, 0x727cc, 0x727db]
+	elif md5_sum == "c11ab446c6d92e4e89d557864aa62997":
+		seek_values = [0x7283e, 0x72824, 0x72831, 0x72859, 0x7284c, 0x727bc, 0x727cb]
+	elif md5_sum == "f588469eb868373a339bebb5fba5a9bb":
+		seek_values = [0x730b6, 0x7309c, 0x730a9, 0x730f2, 0x730e5, 0x73034, 0x73043]
+	elif md5_sum == "d56e7641e8f5d4ec3144bb1c140a7677":
+		seek_values = [0x73072, 0x73058, 0x73065, 0x730ae, 0x730a1, 0x7302c, 0x7303b]
+	else:
+		push_error("Unknown EXE with MD5: ", md5_sum)
+		return
+	
+	var file := FileAccess.open(filepath, FileAccess.READ_WRITE)
+	for i in range(len(seek_values)):
+		file.seek(seek_values[i])
+		for byte: int in patch_values[i]:
+			file.store_8(byte)
+		file.store_8(0)
+	file.close()
 #endregion
 
 #region Binary Diff Patch functions
