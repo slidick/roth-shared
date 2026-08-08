@@ -4184,3 +4184,53 @@ func populate_custom_install(new_directory: String) -> bool:
 	ROTHInstallation.write_roth_ini(new_directory.path_join("ROTH.INI"))
 	
 	return true
+
+
+func get_das_files() -> Array:
+	var das_names: Array = []
+	var file := FileAccess.open(roth_res, FileAccess.READ)
+	while file.get_position() < file.get_length():
+		var line: String = file.get_line().replace("\\", "/").replace("\"", "")
+		if line.contains("="):
+			continue
+		elif line.contains("maps"):
+			continue
+		elif line.contains("}"):
+			continue
+		elif line.contains(" "):
+			var das_name: String = line.split(" ")[1].get_file().to_upper()
+			if das_name not in das_names:
+				das_names.append(das_name)
+		elif not line.is_empty():
+			continue
+	file.close()
+	das_names.sort()
+	return das_names
+
+
+func get_map_infos(das_packs: Array) -> Array:
+	var map_infos: Array = []
+	var file := FileAccess.open(roth_res, FileAccess.READ)
+	while file.get_position() < file.get_length():
+		var line: String = file.get_line().replace("\\", "/").replace("\"", "")
+		if line.contains("="):
+			continue
+		elif line.contains("maps"):
+			continue
+		elif line.contains("}"):
+			continue
+		elif line.contains(" "):
+			var line_split: Array = line.split(" ")
+			var map_info: Dictionary = {
+				"name": line_split[0].get_file().to_upper(),
+				"filepath": get(line_split[0].get_file().to_lower()),
+				"vanilla": true,
+			}
+			for das_info: Dictionary in das_packs:
+				if line_split[1].get_file().to_upper() == das_info.filepath.get_basename().get_file().to_upper():
+					map_info["das_info"] = das_info
+			map_infos.append(map_info)
+		elif not line.is_empty():
+			continue
+	file.close()
+	return map_infos
