@@ -1519,6 +1519,20 @@ const REQUIRED_FILES: Array = [
 	"roth_exe",
 	"roth_res",
 	"roth_ini",
+	"dos4gw",
+	"dbase100",
+	"dbase200",
+	"dbase300",
+	"dbase400",
+	"dbase500",
+	"filelist",
+	"backdrop",
+	"icons",
+	"hmidet_386",
+	"hmidrv_386",
+	"hmimdrv_386",
+	"drum",
+	"melodic",
 ]
 
 #region Filepaths
@@ -3610,6 +3624,8 @@ var dosbox_config: String :
 
 #endregion
 
+var valid: Variant = null
+
 #region Write Files
 static func write_dosbox_mapper_file(dosbox_mapper_filepath: String, dosbox_keymap: Dictionary) -> void:
 	if not DirAccess.dir_exists_absolute(dosbox_mapper_filepath.get_base_dir()):
@@ -4121,10 +4137,14 @@ func _to_string() -> String:
 
 
 func is_valid() -> bool:
-	for file: String in REQUIRED_FILES:
-		if get(file).is_empty():
-			return false
-	return true
+	if valid == null:
+		for file: String in REQUIRED_FILES:
+			if get(file).is_empty():
+				print("Missing: %s" % file)
+				valid = false
+		if valid == null:
+			valid = true
+	return valid
 
 
 func verify_installation_integrity() -> void:
