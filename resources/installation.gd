@@ -3557,6 +3557,54 @@ var walkwy1a_gdv: String :
 			return directory.path_join("ROTH/GDV/WALKWY1A.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/WALKWY1A.GDV")):
 			return directory.path_join("DATA/GDV/WALKWY1A.GDV")
+var iplogo_gdv: String :
+	get():
+		if FileAccess.file_exists(directory.path_join("ROTH/GDV/IPLOGO.GDV")):
+			return directory.path_join("ROTH/GDV/IPLOGO.GDV")
+		elif FileAccess.file_exists(directory.path_join("DATA/GDV/IPLOGO.GDV")):
+			return directory.path_join("DATA/GDV/IPLOGO.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/IPLOGO.GDV")):
+			return directory.path_join("GDV/IPLOGO.GDV")
+		else:
+			return ""
+var name: String :
+	get():
+		if is_valid():
+			return language
+		return "Invalid Installation"
+var id: String :
+	get():
+		return directory.md5_text()
+var save_directory: String :
+	get():
+		if DirAccess.dir_exists_absolute(directory.path_join("ROTH/SAVEGAME")):
+			return directory.path_join("ROTH/SAVEGAME")
+		elif DirAccess.dir_exists_absolute(directory.path_join("SAVEGAME")):
+			return directory.path_join("SAVEGAME")
+		else:
+			return ""
+var gdv_directory: String :
+	get():
+		if DirAccess.dir_exists_absolute(directory.path_join("ROTH/GDV")):
+			return directory.path_join("ROTH/GDV")
+		elif DirAccess.dir_exists_absolute(directory.path_join("DATA/GDV")):
+			return directory.path_join("DATA/GDV")
+		elif DirAccess.dir_exists_absolute(directory.path_join("GDV")):
+			return directory.path_join("GDV")
+		else:
+			return ""
+var dosbox_exe: String :
+	get():
+		if FileAccess.file_exists(directory.path_join("DOSBOX/DOSBox.exe")):
+			return directory.path_join("DOSBOX/DOSBox.exe")
+		elif FileAccess.file_exists(directory.path_join("DOSBox.exe")):
+			return directory.path_join("DOSBox.exe")
+		else:
+			return ""
+var dosbox_config: String :
+	get():
+		if FileAccess.file_exists(directory.path_join("dosboxROTH.conf")):
+			return directory.path_join("dosboxROTH.conf")
 		else:
 			return ""
 
