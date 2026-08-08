@@ -1546,6 +1546,8 @@ var roth_exe: String :
 			return directory.path_join("DATA/ROTH.EXE")
 		elif FileAccess.file_exists(directory.path_join("DATA/INSTALL/ROTH.EXE")):
 			return directory.path_join("DATA/INSTALL/ROTH.EXE")
+		elif FileAccess.file_exists(directory.path_join("ROTH.EXE")):
+			return directory.path_join("ROTH.EXE")
 		else:
 			return ""
 var roth_exe_md5: String :
@@ -1584,6 +1586,8 @@ var roth_res: String :
 			return directory.path_join("DATA/ROTH.RES")
 		elif FileAccess.file_exists(directory.path_join("DATA/INSTALL/ROTH.RES")):
 			return directory.path_join("DATA/INSTALL/ROTH.RES")
+		elif FileAccess.file_exists(directory.path_join("ROTH.RES")):
+			return directory.path_join("ROTH.RES")
 		else:
 			return ""
 var roth_res_version: String :
@@ -1698,6 +1702,8 @@ var roth_ini: String :
 			return directory.path_join("DATA/ROTH.INI")
 		elif FileAccess.file_exists(directory.path_join("DATA/INSTALL/ROTH.INI")):
 			return directory.path_join("DATA/INSTALL/ROTH.INI")
+		elif FileAccess.file_exists(directory.path_join("ROTH.INI")):
+			return directory.path_join("ROTH.INI")
 		else:
 			return ""
 var config_ini: String :
@@ -1708,6 +1714,8 @@ var config_ini: String :
 			return directory.path_join("DATA/CONFIG.INI")
 		elif FileAccess.file_exists(directory.path_join("DATA/INSTALL/CONFIG.INI")):
 			return directory.path_join("DATA/INSTALL/CONFIG.INI")
+		elif FileAccess.file_exists(directory.path_join("CONFIG.INI")):
+			return directory.path_join("CONFIG.INI")
 		else:
 			return ""
 var dbase100: String :
@@ -1716,6 +1724,8 @@ var dbase100: String :
 			return directory.path_join("ROTH/DBASE100.DAT")
 		elif FileAccess.file_exists(directory.path_join("DATA/DBASE100.DAT")):
 			return directory.path_join("DATA/DBASE100.DAT")
+		elif FileAccess.file_exists(directory.path_join("DBASE100.DAT")):
+			return directory.path_join("DBASE100.DAT")
 		else:
 			return ""
 var dbase200: String :
@@ -1724,6 +1734,8 @@ var dbase200: String :
 			return directory.path_join("ROTH/DBASE200.DAT")
 		elif FileAccess.file_exists(directory.path_join("DATA/DBASE200.DAT")):
 			return directory.path_join("DATA/DBASE200.DAT")
+		elif FileAccess.file_exists(directory.path_join("DBASE200.DAT")):
+			return directory.path_join("DBASE200.DAT")
 		else:
 			return ""
 var dbase300: String :
@@ -1732,6 +1744,8 @@ var dbase300: String :
 			return directory.path_join("ROTH/DBASE300.DAT")
 		elif FileAccess.file_exists(directory.path_join("DATA/DBASE300.DAT")):
 			return directory.path_join("DATA/DBASE300.DAT")
+		elif FileAccess.file_exists(directory.path_join("DBASE300.DAT")):
+			return directory.path_join("DBASE300.DAT")
 		else:
 			return ""
 var dbase400: String :
@@ -1740,6 +1754,8 @@ var dbase400: String :
 			return directory.path_join("ROTH/DBASE400.DAT")
 		elif FileAccess.file_exists(directory.path_join("DATA/DBASE400.DAT")):
 			return directory.path_join("DATA/DBASE400.DAT")
+		elif FileAccess.file_exists(directory.path_join("DBASE400.DAT")):
+			return directory.path_join("DBASE400.DAT")
 		else:
 			return ""
 var dbase500: String :
@@ -1748,6 +1764,8 @@ var dbase500: String :
 			return directory.path_join("ROTH/DBASE500.DAT")
 		elif FileAccess.file_exists(directory.path_join("DATA/DBASE500.DAT")):
 			return directory.path_join("DATA/DBASE500.DAT")
+		elif FileAccess.file_exists(directory.path_join("DBASE500.DAT")):
+			return directory.path_join("DBASE500.DAT")
 		else:
 			return ""
 var dos4gw: String :
@@ -1758,6 +1776,8 @@ var dos4gw: String :
 			return directory.path_join("DATA/DOS4GW.EXE")
 		elif FileAccess.file_exists(directory.path_join("DATA/INSTALL/DOS4GW.EXE")):
 			return directory.path_join("DATA/INSTALL/DOS4GW.EXE")
+		elif FileAccess.file_exists(directory.path_join("DOS4GW.EXE")):
+			return directory.path_join("DOS4GW.EXE")
 		else:
 			return ""
 
@@ -1767,6 +1787,8 @@ var backdrop: String :
 			return directory.path_join("ROTH/DATA/BACKDROP.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/DATA/BACKDROP.RAW")):
 			return directory.path_join("DATA/DATA/BACKDROP.RAW")
+		elif FileAccess.file_exists(directory.path_join("DATA/BACKDROP.RAW")):
+			return directory.path_join("DATA/BACKDROP.RAW")
 		else:
 			return ""
 var fxscript: String :
@@ -1775,6 +1797,8 @@ var fxscript: String :
 			return directory.path_join("ROTH/DATA/FXSCRIPT.SFX")
 		elif FileAccess.file_exists(directory.path_join("DATA/DATA/FXSCRIPT.SFX")):
 			return directory.path_join("DATA/DATA/FXSCRIPT.SFX")
+		elif FileAccess.file_exists(directory.path_join("DATA/FXSCRIPT.SFX")):
+			return directory.path_join("DATA/FXSCRIPT.SFX")
 		else:
 			return ""
 var fx22: String :
@@ -1783,6 +1807,8 @@ var fx22: String :
 			return directory.path_join("ROTH/DATA/FX22.SFX")
 		elif FileAccess.file_exists(directory.path_join("DATA/DATA/FX22.SFX")):
 			return directory.path_join("DATA/DATA/FX22.SFX")
+		elif FileAccess.file_exists(directory.path_join("DATA/FX22.SFX")):
+			return directory.path_join("DATA/FX22.SFX")
 		else:
 			return ""
 var icons: String :
@@ -1791,6 +1817,18 @@ var icons: String :
 			return directory.path_join("ROTH/DATA/ICONS.ALL")
 		elif FileAccess.file_exists(directory.path_join("DATA/DATA/ICONS.ALL")):
 			return directory.path_join("DATA/DATA/ICONS.ALL")
+		elif FileAccess.file_exists(directory.path_join("DATA/ICONS.ALL")):
+			return directory.path_join("DATA/ICONS.ALL")
+		else:
+			return ""
+var filelist: String :
+	get():
+		if FileAccess.file_exists(directory.path_join("ROTH/DATA/FILELIST.TXT")):
+			return directory.path_join("ROTH/DATA/FILELIST.TXT")
+		elif FileAccess.file_exists(directory.path_join("DATA/DATA/FILELIST.TXT")):
+			return directory.path_join("DATA/DATA/FILELIST.TXT")
+		elif FileAccess.file_exists(directory.path_join("DATA/FILELIST.TXT")):
+			return directory.path_join("DATA/FILELIST.TXT")
 		else:
 			return ""
 
@@ -1800,6 +1838,8 @@ var hmidet_386: String :
 			return directory.path_join("ROTH/DIGI/HMIDET.386")
 		elif FileAccess.file_exists(directory.path_join("DATA/DIGI/HMIDET.386")):
 			return directory.path_join("DATA/DIGI/HMIDET.386")
+		elif FileAccess.file_exists(directory.path_join("DIGI/HMIDET.386")):
+			return directory.path_join("DIGI/HMIDET.386")
 		else:
 			return ""
 var hmidrv_386: String :
@@ -1808,6 +1848,8 @@ var hmidrv_386: String :
 			return directory.path_join("ROTH/DIGI/HMIDRV.386")
 		elif FileAccess.file_exists(directory.path_join("DATA/DIGI/HMIDRV.386")):
 			return directory.path_join("DATA/DIGI/HMIDRV.386")
+		elif FileAccess.file_exists(directory.path_join("DIGI/HMIDRV.386")):
+			return directory.path_join("DIGI/HMIDRV.386")
 		else:
 			return ""
 var hmimdrv_386: String :
@@ -1816,6 +1858,8 @@ var hmimdrv_386: String :
 			return directory.path_join("ROTH/MIDI/HMIMDRV.386")
 		elif FileAccess.file_exists(directory.path_join("DATA/MIDI/HMIMDRV.386")):
 			return directory.path_join("DATA/MIDI/HMIMDRV.386")
+		elif FileAccess.file_exists(directory.path_join("MIDI/HMIMDRV.386")):
+			return directory.path_join("MIDI/HMIMDRV.386")
 		else:
 			return ""
 var drum: String :
@@ -1824,6 +1868,8 @@ var drum: String :
 			return directory.path_join("ROTH/MIDI/DRUM.BNK")
 		elif FileAccess.file_exists(directory.path_join("DATA/MIDI/DRUM.BNK")):
 			return directory.path_join("DATA/MIDI/DRUM.BNK")
+		elif FileAccess.file_exists(directory.path_join("MIDI/DRUM.BNK")):
+			return directory.path_join("MIDI/DRUM.BNK")
 		else:
 			return ""
 var melodic: String :
@@ -1832,6 +1878,8 @@ var melodic: String :
 			return directory.path_join("ROTH/MIDI/MELODIC.BNK")
 		elif FileAccess.file_exists(directory.path_join("DATA/MIDI/MELODIC.BNK")):
 			return directory.path_join("DATA/MIDI/MELODIC.BNK")
+		elif FileAccess.file_exists(directory.path_join("MIDI/MELODIC.BNK")):
+			return directory.path_join("MIDI/MELODIC.BNK")
 		else:
 			return ""
 
@@ -1841,6 +1889,8 @@ var ademo: String :
 			return directory.path_join("ROTH/M/ADEMO.DAS")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/ADEMO.DAS")):
 			return directory.path_join("DATA/M/ADEMO.DAS")
+		elif FileAccess.file_exists(directory.path_join("M/ADEMO.DAS")):
+			return directory.path_join("M/ADEMO.DAS")
 		else:
 			return ""
 var demo: String :
@@ -1849,6 +1899,8 @@ var demo: String :
 			return directory.path_join("ROTH/M/DEMO.DAS")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/DEMO.DAS")):
 			return directory.path_join("DATA/M/DEMO.DAS")
+		elif FileAccess.file_exists(directory.path_join("M/DEMO.DAS")):
+			return directory.path_join("M/DEMO.DAS")
 		else:
 			return ""
 var demo1: String :
@@ -1857,6 +1909,8 @@ var demo1: String :
 			return directory.path_join("ROTH/M/DEMO1.DAS")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/DEMO1.DAS")):
 			return directory.path_join("DATA/M/DEMO1.DAS")
+		elif FileAccess.file_exists(directory.path_join("M/DEMO1.DAS")):
+			return directory.path_join("M/DEMO1.DAS")
 		else:
 			return ""
 var demo2: String :
@@ -1865,6 +1919,8 @@ var demo2: String :
 			return directory.path_join("ROTH/M/DEMO2.DAS")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/DEMO2.DAS")):
 			return directory.path_join("DATA/M/DEMO2.DAS")
+		elif FileAccess.file_exists(directory.path_join("M/DEMO2.DAS")):
+			return directory.path_join("M/DEMO2.DAS")
 		else:
 			return ""
 var demo3: String :
@@ -1873,6 +1929,8 @@ var demo3: String :
 			return directory.path_join("ROTH/M/DEMO3.DAS")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/DEMO3.DAS")):
 			return directory.path_join("DATA/M/DEMO3.DAS")
+		elif FileAccess.file_exists(directory.path_join("M/DEMO3.DAS")):
+			return directory.path_join("M/DEMO3.DAS")
 		else:
 			return ""
 var demo4: String :
@@ -1881,6 +1939,8 @@ var demo4: String :
 			return directory.path_join("ROTH/M/DEMO4.DAS")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/DEMO4.DAS")):
 			return directory.path_join("DATA/M/DEMO4.DAS")
+		elif FileAccess.file_exists(directory.path_join("M/DEMO4.DAS")):
+			return directory.path_join("M/DEMO4.DAS")
 		else:
 			return ""
 
@@ -1890,6 +1950,8 @@ var abagate2: String :
 			return directory.path_join("ROTH/M/ABAGATE2.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/ABAGATE2.RAW")):
 			return directory.path_join("DATA/M/ABAGATE2.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/ABAGATE2.RAW")):
+			return directory.path_join("M/ABAGATE2.RAW")
 		else:
 			return ""
 var aelf: String :
@@ -1898,6 +1960,8 @@ var aelf: String :
 			return directory.path_join("ROTH/M/AELF.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/AELF.RAW")):
 			return directory.path_join("DATA/M/AELF.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/AELF.RAW")):
+			return directory.path_join("M/AELF.RAW")
 		else:
 			return ""
 var anubis: String :
@@ -1906,6 +1970,8 @@ var anubis: String :
 			return directory.path_join("ROTH/M/ANUBIS.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/ANUBIS.RAW")):
 			return directory.path_join("DATA/M/ANUBIS.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/ANUBIS.RAW")):
+			return directory.path_join("M/ANUBIS.RAW")
 		else:
 			return ""
 var aqua1: String :
@@ -1914,6 +1980,8 @@ var aqua1: String :
 			return directory.path_join("ROTH/M/AQUA1.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/AQUA1.RAW")):
 			return directory.path_join("DATA/M/AQUA1.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/AQUA1.RAW")):
+			return directory.path_join("M/AQUA1.RAW")
 		else:
 			return ""
 var aqua2: String :
@@ -1922,6 +1990,8 @@ var aqua2: String :
 			return directory.path_join("ROTH/M/AQUA2.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/AQUA2.RAW")):
 			return directory.path_join("DATA/M/AQUA2.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/AQUA2.RAW")):
+			return directory.path_join("M/AQUA2.RAW")
 		else:
 			return ""
 var caverns: String :
@@ -1930,6 +2000,8 @@ var caverns: String :
 			return directory.path_join("ROTH/M/CAVERNS.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/CAVERNS.RAW")):
 			return directory.path_join("DATA/M/CAVERNS.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/CAVERNS.RAW")):
+			return directory.path_join("M/CAVERNS.RAW")
 		else:
 			return ""
 var caverns2: String :
@@ -1938,6 +2010,8 @@ var caverns2: String :
 			return directory.path_join("ROTH/M/CAVERNS2.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/CAVERNS2.RAW")):
 			return directory.path_join("DATA/M/CAVERNS2.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/CAVERNS2.RAW")):
+			return directory.path_join("M/CAVERNS2.RAW")
 		else:
 			return ""
 var caverns3: String :
@@ -1946,6 +2020,8 @@ var caverns3: String :
 			return directory.path_join("ROTH/M/CAVERNS3.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/CAVERNS3.RAW")):
 			return directory.path_join("DATA/M/CAVERNS3.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/CAVERNS3.RAW")):
+			return directory.path_join("M/CAVERNS3.RAW")
 		else:
 			return ""
 var church1: String :
@@ -1954,6 +2030,8 @@ var church1: String :
 			return directory.path_join("ROTH/M/CHURCH1.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/CHURCH1.RAW")):
 			return directory.path_join("DATA/M/CHURCH1.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/CHURCH1.RAW")):
+			return directory.path_join("M/CHURCH1.RAW")
 		else:
 			return ""
 var dominion: String :
@@ -1962,6 +2040,8 @@ var dominion: String :
 			return directory.path_join("ROTH/M/DOMINION.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/DOMINION.RAW")):
 			return directory.path_join("DATA/M/DOMINION.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/DOMINION.RAW")):
+			return directory.path_join("M/DOMINION.RAW")
 		else:
 			return ""
 var dopple: String :
@@ -1970,6 +2050,8 @@ var dopple: String :
 			return directory.path_join("ROTH/M/DOPPLE.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/DOPPLE.RAW")):
 			return directory.path_join("DATA/M/DOPPLE.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/DOPPLE.RAW")):
+			return directory.path_join("M/DOPPLE.RAW")
 		else:
 			return ""
 var elohim1: String :
@@ -1978,6 +2060,8 @@ var elohim1: String :
 			return directory.path_join("ROTH/M/ELOHIM1.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/ELOHIM1.RAW")):
 			return directory.path_join("DATA/M/ELOHIM1.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/ELOHIM1.RAW")):
+			return directory.path_join("M/ELOHIM1.RAW")
 		else:
 			return ""
 var gnarl1: String :
@@ -1986,6 +2070,8 @@ var gnarl1: String :
 			return directory.path_join("ROTH/M/GNARL1.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/GNARL1.RAW")):
 			return directory.path_join("DATA/M/GNARL1.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/GNARL1.RAW")):
+			return directory.path_join("M/GNARL1.RAW")
 		else:
 			return ""
 var grave: String :
@@ -1994,6 +2080,8 @@ var grave: String :
 			return directory.path_join("ROTH/M/GRAVE.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/GRAVE.RAW")):
 			return directory.path_join("DATA/M/GRAVE.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/GRAVE.RAW")):
+			return directory.path_join("M/GRAVE.RAW")
 		else:
 			return ""
 var lrinth: String :
@@ -2002,6 +2090,8 @@ var lrinth: String :
 			return directory.path_join("ROTH/M/LRINTH.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/LRINTH.RAW")):
 			return directory.path_join("DATA/M/LRINTH.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/LRINTH.RAW")):
+			return directory.path_join("M/LRINTH.RAW")
 		else:
 			return ""
 var lrinth1: String :
@@ -2010,6 +2100,8 @@ var lrinth1: String :
 			return directory.path_join("ROTH/M/LRINTH1.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/LRINTH1.RAW")):
 			return directory.path_join("DATA/M/LRINTH1.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/LRINTH1.RAW")):
+			return directory.path_join("M/LRINTH1.RAW")
 		else:
 			return ""
 var mas3: String :
@@ -2018,6 +2110,8 @@ var mas3: String :
 			return directory.path_join("ROTH/M/MAS3.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/MAS3.RAW")):
 			return directory.path_join("DATA/M/MAS3.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/MAS3.RAW")):
+			return directory.path_join("M/MAS3.RAW")
 		else:
 			return ""
 var mas4: String :
@@ -2026,6 +2120,8 @@ var mas4: String :
 			return directory.path_join("ROTH/M/MAS4.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/MAS4.RAW")):
 			return directory.path_join("DATA/M/MAS4.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/MAS4.RAW")):
+			return directory.path_join("M/MAS4.RAW")
 		else:
 			return ""
 var mas6: String :
@@ -2034,6 +2130,8 @@ var mas6: String :
 			return directory.path_join("ROTH/M/MAS6.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/MAS6.RAW")):
 			return directory.path_join("DATA/M/MAS6.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/MAS6.RAW")):
+			return directory.path_join("M/MAS6.RAW")
 		else:
 			return ""
 var mas7: String :
@@ -2042,6 +2140,8 @@ var mas7: String :
 			return directory.path_join("ROTH/M/MAS7.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/MAS7.RAW")):
 			return directory.path_join("DATA/M/MAS7.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/MAS7.RAW")):
+			return directory.path_join("M/MAS7.RAW")
 		else:
 			return ""
 var mauso1ea: String :
@@ -2050,6 +2150,8 @@ var mauso1ea: String :
 			return directory.path_join("ROTH/M/MAUSO1EA.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/MAUSO1EA.RAW")):
 			return directory.path_join("DATA/M/MAUSO1EA.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/MAUSO1EA.RAW")):
+			return directory.path_join("M/MAUSO1EA.RAW")
 		else:
 			return ""
 var mauso1eb: String :
@@ -2058,6 +2160,8 @@ var mauso1eb: String :
 			return directory.path_join("ROTH/M/MAUSO1EB.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/MAUSO1EB.RAW")):
 			return directory.path_join("DATA/M/MAUSO1EB.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/MAUSO1EB.RAW")):
+			return directory.path_join("M/MAUSO1EB.RAW")
 		else:
 			return ""
 var maze: String :
@@ -2066,6 +2170,8 @@ var maze: String :
 			return directory.path_join("ROTH/M/MAZE.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/MAZE.RAW")):
 			return directory.path_join("DATA/M/MAZE.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/MAZE.RAW")):
+			return directory.path_join("M/MAZE.RAW")
 		else:
 			return ""
 var optemp1: String :
@@ -2074,6 +2180,8 @@ var optemp1: String :
 			return directory.path_join("ROTH/M/OPTEMP1.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/OPTEMP1.RAW")):
 			return directory.path_join("DATA/M/OPTEMP1.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/OPTEMP1.RAW")):
+			return directory.path_join("M/OPTEMP1.RAW")
 		else:
 			return ""
 var raquia1: String :
@@ -2082,6 +2190,8 @@ var raquia1: String :
 			return directory.path_join("ROTH/M/RAQUIA1.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/RAQUIA1.RAW")):
 			return directory.path_join("DATA/M/RAQUIA1.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/RAQUIA1.RAW")):
+			return directory.path_join("M/RAQUIA1.RAW")
 		else:
 			return ""
 var raquia2: String :
@@ -2090,6 +2200,8 @@ var raquia2: String :
 			return directory.path_join("ROTH/M/RAQUIA2.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/RAQUIA2.RAW")):
 			return directory.path_join("DATA/M/RAQUIA2.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/RAQUIA2.RAW")):
+			return directory.path_join("M/RAQUIA2.RAW")
 		else:
 			return ""
 var raquia3: String :
@@ -2098,6 +2210,8 @@ var raquia3: String :
 			return directory.path_join("ROTH/M/RAQUIA3.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/RAQUIA3.RAW")):
 			return directory.path_join("DATA/M/RAQUIA3.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/RAQUIA3.RAW")):
+			return directory.path_join("M/RAQUIA3.RAW")
 		else:
 			return ""
 var raquia4: String :
@@ -2106,6 +2220,8 @@ var raquia4: String :
 			return directory.path_join("ROTH/M/RAQUIA4.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/RAQUIA4.RAW")):
 			return directory.path_join("DATA/M/RAQUIA4.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/RAQUIA4.RAW")):
+			return directory.path_join("M/RAQUIA4.RAW")
 		else:
 			return ""
 var raquia5: String :
@@ -2114,6 +2230,8 @@ var raquia5: String :
 			return directory.path_join("ROTH/M/RAQUIA5.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/RAQUIA5.RAW")):
 			return directory.path_join("DATA/M/RAQUIA5.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/RAQUIA5.RAW")):
+			return directory.path_join("M/RAQUIA5.RAW")
 		else:
 			return ""
 var salvat: String :
@@ -2122,6 +2240,8 @@ var salvat: String :
 			return directory.path_join("ROTH/M/SALVAT.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/SALVAT.RAW")):
 			return directory.path_join("DATA/M/SALVAT.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/SALVAT.RAW")):
+			return directory.path_join("M/SALVAT.RAW")
 		else:
 			return ""
 var soulst2: String :
@@ -2130,6 +2250,8 @@ var soulst2: String :
 			return directory.path_join("ROTH/M/SOULST2.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/SOULST2.RAW")):
 			return directory.path_join("DATA/M/SOULST2.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/SOULST2.RAW")):
+			return directory.path_join("M/SOULST2.RAW")
 		else:
 			return ""
 var soulst3: String :
@@ -2138,6 +2260,8 @@ var soulst3: String :
 			return directory.path_join("ROTH/M/SOULST3.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/SOULST3.RAW")):
 			return directory.path_join("DATA/M/SOULST3.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/SOULST3.RAW")):
+			return directory.path_join("M/SOULST3.RAW")
 		else:
 			return ""
 var study1: String :
@@ -2146,6 +2270,8 @@ var study1: String :
 			return directory.path_join("ROTH/M/STUDY1.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/STUDY1.RAW")):
 			return directory.path_join("DATA/M/STUDY1.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/STUDY1.RAW")):
+			return directory.path_join("M/STUDY1.RAW")
 		else:
 			return ""
 var study2: String :
@@ -2154,6 +2280,8 @@ var study2: String :
 			return directory.path_join("ROTH/M/STUDY2.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/STUDY2.RAW")):
 			return directory.path_join("DATA/M/STUDY2.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/STUDY2.RAW")):
+			return directory.path_join("M/STUDY2.RAW")
 		else:
 			return ""
 var study3: String :
@@ -2162,6 +2290,8 @@ var study3: String :
 			return directory.path_join("ROTH/M/STUDY3.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/STUDY3.RAW")):
 			return directory.path_join("DATA/M/STUDY3.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/STUDY3.RAW")):
+			return directory.path_join("M/STUDY3.RAW")
 		else:
 			return ""
 var study4: String :
@@ -2170,6 +2300,8 @@ var study4: String :
 			return directory.path_join("ROTH/M/STUDY4.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/STUDY4.RAW")):
 			return directory.path_join("DATA/M/STUDY4.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/STUDY4.RAW")):
+			return directory.path_join("M/STUDY4.RAW")
 		else:
 			return ""
 var temple1: String :
@@ -2178,6 +2310,8 @@ var temple1: String :
 			return directory.path_join("ROTH/M/TEMPLE1.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/TEMPLE1.RAW")):
 			return directory.path_join("DATA/M/TEMPLE1.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/TEMPLE1.RAW")):
+			return directory.path_join("M/TEMPLE1.RAW")
 		else:
 			return ""
 var tgate1f: String :
@@ -2186,6 +2320,8 @@ var tgate1f: String :
 			return directory.path_join("ROTH/M/TGATE1F.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/TGATE1F.RAW")):
 			return directory.path_join("DATA/M/TGATE1F.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/TGATE1F.RAW")):
+			return directory.path_join("M/TGATE1F.RAW")
 		else:
 			return ""
 var tgate1g: String :
@@ -2194,6 +2330,8 @@ var tgate1g: String :
 			return directory.path_join("ROTH/M/TGATE1G.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/TGATE1G.RAW")):
 			return directory.path_join("DATA/M/TGATE1G.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/TGATE1G.RAW")):
+			return directory.path_join("M/TGATE1G.RAW")
 		else:
 			return ""
 var tgate1h: String :
@@ -2202,6 +2340,8 @@ var tgate1h: String :
 			return directory.path_join("ROTH/M/TGATE1H.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/TGATE1H.RAW")):
 			return directory.path_join("DATA/M/TGATE1H.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/TGATE1H.RAW")):
+			return directory.path_join("M/TGATE1H.RAW")
 		else:
 			return ""
 var tgate1i: String :
@@ -2210,6 +2350,8 @@ var tgate1i: String :
 			return directory.path_join("ROTH/M/TGATE1I.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/TGATE1I.RAW")):
 			return directory.path_join("DATA/M/TGATE1I.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/TGATE1I.RAW")):
+			return directory.path_join("M/TGATE1I.RAW")
 		else:
 			return ""
 var tower1: String :
@@ -2218,6 +2360,8 @@ var tower1: String :
 			return directory.path_join("ROTH/M/TOWER1.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/TOWER1.RAW")):
 			return directory.path_join("DATA/M/TOWER1.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/TOWER1.RAW")):
+			return directory.path_join("M/TOWER1.RAW")
 		else:
 			return ""
 var vicar: String :
@@ -2226,6 +2370,8 @@ var vicar: String :
 			return directory.path_join("ROTH/M/VICAR.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/VICAR.RAW")):
 			return directory.path_join("DATA/M/VICAR.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/VICAR.RAW")):
+			return directory.path_join("M/VICAR.RAW")
 		else:
 			return ""
 var vicar1: String :
@@ -2234,6 +2380,8 @@ var vicar1: String :
 			return directory.path_join("ROTH/M/VICAR1.RAW")
 		elif FileAccess.file_exists(directory.path_join("DATA/M/VICAR1.RAW")):
 			return directory.path_join("DATA/M/VICAR1.RAW")
+		elif FileAccess.file_exists(directory.path_join("M/VICAR1.RAW")):
+			return directory.path_join("M/VICAR1.RAW")
 		else:
 			return ""
 
@@ -2243,6 +2391,8 @@ var abadon1a_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON1A.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON1A.GDV")):
 			return directory.path_join("DATA/GDV/ABADON1A.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON1A.GDV")):
+			return directory.path_join("GDV/ABADON1A.GDV")
 		else:
 			return ""
 var abadon1b_gdv: String :
@@ -2251,6 +2401,8 @@ var abadon1b_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON1B.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON1B.GDV")):
 			return directory.path_join("DATA/GDV/ABADON1B.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON1B.GDV")):
+			return directory.path_join("GDV/ABADON1B.GDV")
 		else:
 			return ""
 var abadon1c_gdv: String :
@@ -2259,6 +2411,8 @@ var abadon1c_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON1C.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON1C.GDV")):
 			return directory.path_join("DATA/GDV/ABADON1C.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON1C.GDV")):
+			return directory.path_join("GDV/ABADON1C.GDV")
 		else:
 			return ""
 var abadon1d_gdv: String :
@@ -2267,6 +2421,8 @@ var abadon1d_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON1D.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON1D.GDV")):
 			return directory.path_join("DATA/GDV/ABADON1D.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON1D.GDV")):
+			return directory.path_join("GDV/ABADON1D.GDV")
 		else:
 			return ""
 var abadon1e_gdv: String :
@@ -2275,6 +2431,8 @@ var abadon1e_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON1E.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON1E.GDV")):
 			return directory.path_join("DATA/GDV/ABADON1E.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON1E.GDV")):
+			return directory.path_join("GDV/ABADON1E.GDV")
 		else:
 			return ""
 var abadon1f_gdv: String :
@@ -2283,6 +2441,8 @@ var abadon1f_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON1F.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON1F.GDV")):
 			return directory.path_join("DATA/GDV/ABADON1F.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON1F.GDV")):
+			return directory.path_join("GDV/ABADON1F.GDV")
 		else:
 			return ""
 var abadon1g_gdv: String :
@@ -2291,6 +2451,8 @@ var abadon1g_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON1G.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON1G.GDV")):
 			return directory.path_join("DATA/GDV/ABADON1G.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON1G.GDV")):
+			return directory.path_join("GDV/ABADON1G.GDV")
 		else:
 			return ""
 var abadon1h_gdv: String :
@@ -2299,6 +2461,8 @@ var abadon1h_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON1H.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON1H.GDV")):
 			return directory.path_join("DATA/GDV/ABADON1H.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON1H.GDV")):
+			return directory.path_join("GDV/ABADON1H.GDV")
 		else:
 			return ""
 var abadon2a_gdv: String :
@@ -2307,6 +2471,8 @@ var abadon2a_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON2A.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON2A.GDV")):
 			return directory.path_join("DATA/GDV/ABADON2A.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON2A.GDV")):
+			return directory.path_join("GDV/ABADON2A.GDV")
 		else:
 			return ""
 var abadon2b_gdv: String :
@@ -2315,6 +2481,8 @@ var abadon2b_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON2B.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON2B.GDV")):
 			return directory.path_join("DATA/GDV/ABADON2B.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON2B.GDV")):
+			return directory.path_join("GDV/ABADON2B.GDV")
 		else:
 			return ""
 var abadon2c_gdv: String :
@@ -2323,6 +2491,8 @@ var abadon2c_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON2C.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON2C.GDV")):
 			return directory.path_join("DATA/GDV/ABADON2C.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON2C.GDV")):
+			return directory.path_join("GDV/ABADON2C.GDV")
 		else:
 			return ""
 var abadon2d_gdv: String :
@@ -2331,6 +2501,8 @@ var abadon2d_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON2D.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON2D.GDV")):
 			return directory.path_join("DATA/GDV/ABADON2D.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON2D.GDV")):
+			return directory.path_join("GDV/ABADON2D.GDV")
 		else:
 			return ""
 var abadon2e_gdv: String :
@@ -2339,6 +2511,8 @@ var abadon2e_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON2E.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON2E.GDV")):
 			return directory.path_join("DATA/GDV/ABADON2E.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON2E.GDV")):
+			return directory.path_join("GDV/ABADON2E.GDV")
 		else:
 			return ""
 var abadon2f_gdv: String :
@@ -2347,6 +2521,8 @@ var abadon2f_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON2F.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON2F.GDV")):
 			return directory.path_join("DATA/GDV/ABADON2F.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON2F.GDV")):
+			return directory.path_join("GDV/ABADON2F.GDV")
 		else:
 			return ""
 var abadon2g_gdv: String :
@@ -2355,6 +2531,8 @@ var abadon2g_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON2G.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON2G.GDV")):
 			return directory.path_join("DATA/GDV/ABADON2G.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON2G.GDV")):
+			return directory.path_join("GDV/ABADON2G.GDV")
 		else:
 			return ""
 var abadon2h_gdv: String :
@@ -2363,6 +2541,8 @@ var abadon2h_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON2H.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON2H.GDV")):
 			return directory.path_join("DATA/GDV/ABADON2H.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON2H.GDV")):
+			return directory.path_join("GDV/ABADON2H.GDV")
 		else:
 			return ""
 var abadon2i_gdv: String :
@@ -2371,6 +2551,8 @@ var abadon2i_gdv: String :
 			return directory.path_join("ROTH/GDV/ABADON2I.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ABADON2I.GDV")):
 			return directory.path_join("DATA/GDV/ABADON2I.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ABADON2I.GDV")):
+			return directory.path_join("GDV/ABADON2I.GDV")
 		else:
 			return ""
 var alef01_gdv: String :
@@ -2379,6 +2561,8 @@ var alef01_gdv: String :
 			return directory.path_join("ROTH/GDV/ALEF01.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ALEF01.GDV")):
 			return directory.path_join("DATA/GDV/ALEF01.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ALEF01.GDV")):
+			return directory.path_join("GDV/ALEF01.GDV")
 		else:
 			return ""
 var alef02_gdv: String :
@@ -2387,6 +2571,8 @@ var alef02_gdv: String :
 			return directory.path_join("ROTH/GDV/ALEF02.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ALEF02.GDV")):
 			return directory.path_join("DATA/GDV/ALEF02.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ALEF02.GDV")):
+			return directory.path_join("GDV/ALEF02.GDV")
 		else:
 			return ""
 var alef03a_gdv: String :
@@ -2395,6 +2581,8 @@ var alef03a_gdv: String :
 			return directory.path_join("ROTH/GDV/ALEF03A.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ALEF03A.GDV")):
 			return directory.path_join("DATA/GDV/ALEF03A.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ALEF03A.GDV")):
+			return directory.path_join("GDV/ALEF03A.GDV")
 		else:
 			return ""
 var alef03b_gdv: String :
@@ -2403,6 +2591,8 @@ var alef03b_gdv: String :
 			return directory.path_join("ROTH/GDV/ALEF03B.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ALEF03B.GDV")):
 			return directory.path_join("DATA/GDV/ALEF03B.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ALEF03B.GDV")):
+			return directory.path_join("GDV/ALEF03B.GDV")
 		else:
 			return ""
 var alef03c_gdv: String :
@@ -2411,6 +2601,8 @@ var alef03c_gdv: String :
 			return directory.path_join("ROTH/GDV/ALEF03C.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ALEF03C.GDV")):
 			return directory.path_join("DATA/GDV/ALEF03C.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ALEF03C.GDV")):
+			return directory.path_join("GDV/ALEF03C.GDV")
 		else:
 			return ""
 var alef03d_gdv: String :
@@ -2419,6 +2611,8 @@ var alef03d_gdv: String :
 			return directory.path_join("ROTH/GDV/ALEF03D.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ALEF03D.GDV")):
 			return directory.path_join("DATA/GDV/ALEF03D.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ALEF03D.GDV")):
+			return directory.path_join("GDV/ALEF03D.GDV")
 		else:
 			return ""
 var alef04_gdv: String :
@@ -2427,6 +2621,8 @@ var alef04_gdv: String :
 			return directory.path_join("ROTH/GDV/ALEF04.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ALEF04.GDV")):
 			return directory.path_join("DATA/GDV/ALEF04.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ALEF04.GDV")):
+			return directory.path_join("GDV/ALEF04.GDV")
 		else:
 			return ""
 var beast_gdv: String :
@@ -2435,6 +2631,8 @@ var beast_gdv: String :
 			return directory.path_join("ROTH/GDV/BEAST.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BEAST.GDV")):
 			return directory.path_join("DATA/GDV/BEAST.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BEAST.GDV")):
+			return directory.path_join("GDV/BEAST.GDV")
 		else:
 			return ""
 var belextra_gdv: String :
@@ -2443,6 +2641,8 @@ var belextra_gdv: String :
 			return directory.path_join("ROTH/GDV/BELEXTRA.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BELEXTRA.GDV")):
 			return directory.path_join("DATA/GDV/BELEXTRA.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BELEXTRA.GDV")):
+			return directory.path_join("GDV/BELEXTRA.GDV")
 		else:
 			return ""
 var belial1a_gdv: String :
@@ -2451,6 +2651,8 @@ var belial1a_gdv: String :
 			return directory.path_join("ROTH/GDV/BELIAL1A.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BELIAL1A.GDV")):
 			return directory.path_join("DATA/GDV/BELIAL1A.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BELIAL1A.GDV")):
+			return directory.path_join("GDV/BELIAL1A.GDV")
 		else:
 			return ""
 var belial1b_gdv: String :
@@ -2459,6 +2661,8 @@ var belial1b_gdv: String :
 			return directory.path_join("ROTH/GDV/BELIAL1B.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BELIAL1B.GDV")):
 			return directory.path_join("DATA/GDV/BELIAL1B.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BELIAL1B.GDV")):
+			return directory.path_join("GDV/BELIAL1B.GDV")
 		else:
 			return ""
 var belial1c_gdv: String :
@@ -2467,6 +2671,8 @@ var belial1c_gdv: String :
 			return directory.path_join("ROTH/GDV/BELIAL1C.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BELIAL1C.GDV")):
 			return directory.path_join("DATA/GDV/BELIAL1C.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BELIAL1C.GDV")):
+			return directory.path_join("GDV/BELIAL1C.GDV")
 		else:
 			return ""
 var belial1e_gdv: String :
@@ -2475,6 +2681,8 @@ var belial1e_gdv: String :
 			return directory.path_join("ROTH/GDV/BELIAL1E.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BELIAL1E.GDV")):
 			return directory.path_join("DATA/GDV/BELIAL1E.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BELIAL1E.GDV")):
+			return directory.path_join("GDV/BELIAL1E.GDV")
 		else:
 			return ""
 var belial1f_gdv: String :
@@ -2483,6 +2691,8 @@ var belial1f_gdv: String :
 			return directory.path_join("ROTH/GDV/BELIAL1F.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BELIAL1F.GDV")):
 			return directory.path_join("DATA/GDV/BELIAL1F.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BELIAL1F.GDV")):
+			return directory.path_join("GDV/BELIAL1F.GDV")
 		else:
 			return ""
 var belsb1_gdv: String :
@@ -2491,6 +2701,8 @@ var belsb1_gdv: String :
 			return directory.path_join("ROTH/GDV/BELSB1.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BELSB1.GDV")):
 			return directory.path_join("DATA/GDV/BELSB1.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BELSB1.GDV")):
+			return directory.path_join("GDV/BELSB1.GDV")
 		else:
 			return ""
 var belsb2_gdv: String :
@@ -2499,6 +2711,8 @@ var belsb2_gdv: String :
 			return directory.path_join("ROTH/GDV/BELSB2.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BELSB2.GDV")):
 			return directory.path_join("DATA/GDV/BELSB2.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BELSB2.GDV")):
+			return directory.path_join("GDV/BELSB2.GDV")
 		else:
 			return ""
 var belsb3_gdv: String :
@@ -2507,6 +2721,8 @@ var belsb3_gdv: String :
 			return directory.path_join("ROTH/GDV/BELSB3.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BELSB3.GDV")):
 			return directory.path_join("DATA/GDV/BELSB3.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BELSB3.GDV")):
+			return directory.path_join("GDV/BELSB3.GDV")
 		else:
 			return ""
 var belsb4_gdv: String :
@@ -2515,6 +2731,8 @@ var belsb4_gdv: String :
 			return directory.path_join("ROTH/GDV/BELSB4.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BELSB4.GDV")):
 			return directory.path_join("DATA/GDV/BELSB4.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BELSB4.GDV")):
+			return directory.path_join("GDV/BELSB4.GDV")
 		else:
 			return ""
 var belsb5_gdv: String :
@@ -2523,6 +2741,8 @@ var belsb5_gdv: String :
 			return directory.path_join("ROTH/GDV/BELSB5.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BELSB5.GDV")):
 			return directory.path_join("DATA/GDV/BELSB5.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BELSB5.GDV")):
+			return directory.path_join("GDV/BELSB5.GDV")
 		else:
 			return ""
 var belsb6_gdv: String :
@@ -2531,6 +2751,8 @@ var belsb6_gdv: String :
 			return directory.path_join("ROTH/GDV/BELSB6.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BELSB6.GDV")):
 			return directory.path_join("DATA/GDV/BELSB6.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BELSB6.GDV")):
+			return directory.path_join("GDV/BELSB6.GDV")
 		else:
 			return ""
 var bendgma_gdv: String :
@@ -2539,6 +2761,8 @@ var bendgma_gdv: String :
 			return directory.path_join("ROTH/GDV/BENDGMA.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BENDGMA.GDV")):
 			return directory.path_join("DATA/GDV/BENDGMA.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BENDGMA.GDV")):
+			return directory.path_join("GDV/BENDGMA.GDV")
 		else:
 			return ""
 var bendgmb_gdv: String :
@@ -2547,6 +2771,8 @@ var bendgmb_gdv: String :
 			return directory.path_join("ROTH/GDV/BENDGMB.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BENDGMB.GDV")):
 			return directory.path_join("DATA/GDV/BENDGMB.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BENDGMB.GDV")):
+			return directory.path_join("GDV/BENDGMB.GDV")
 		else:
 			return ""
 var betrayal_gdv: String :
@@ -2555,6 +2781,8 @@ var betrayal_gdv: String :
 			return directory.path_join("ROTH/GDV/BETRAYAL.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BETRAYAL.GDV")):
 			return directory.path_join("DATA/GDV/BETRAYAL.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BETRAYAL.GDV")):
+			return directory.path_join("GDV/BETRAYAL.GDV")
 		else:
 			return ""
 var branded_gdv: String :
@@ -2563,6 +2791,8 @@ var branded_gdv: String :
 			return directory.path_join("ROTH/GDV/BRANDED.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/BRANDED.GDV")):
 			return directory.path_join("DATA/GDV/BRANDED.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/BRANDED.GDV")):
+			return directory.path_join("GDV/BRANDED.GDV")
 		else:
 			return ""
 var chptr1_gdv: String :
@@ -2571,6 +2801,8 @@ var chptr1_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR1.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR1.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR1.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR1.GDV")):
+			return directory.path_join("GDV/CHPTR1.GDV")
 		else:
 			return ""
 var chptr10_gdv: String :
@@ -2579,6 +2811,8 @@ var chptr10_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR10.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR10.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR10.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR10.GDV")):
+			return directory.path_join("GDV/CHPTR10.GDV")
 		else:
 			return ""
 var chptr11_gdv: String :
@@ -2587,6 +2821,8 @@ var chptr11_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR11.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR11.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR11.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR11.GDV")):
+			return directory.path_join("GDV/CHPTR11.GDV")
 		else:
 			return ""
 var chptr12_gdv: String :
@@ -2595,6 +2831,8 @@ var chptr12_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR12.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR12.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR12.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR12.GDV")):
+			return directory.path_join("GDV/CHPTR12.GDV")
 		else:
 			return ""
 var chptr13_gdv: String :
@@ -2603,6 +2841,8 @@ var chptr13_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR13.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR13.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR13.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR13.GDV")):
+			return directory.path_join("GDV/CHPTR13.GDV")
 		else:
 			return ""
 var chptr14_gdv: String :
@@ -2611,6 +2851,8 @@ var chptr14_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR14.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR14.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR14.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR14.GDV")):
+			return directory.path_join("GDV/CHPTR14.GDV")
 		else:
 			return ""
 var chptr15_gdv: String :
@@ -2619,6 +2861,8 @@ var chptr15_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR15.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR15.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR15.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR15.GDV")):
+			return directory.path_join("GDV/CHPTR15.GDV")
 		else:
 			return ""
 var chptr16_gdv: String :
@@ -2627,6 +2871,8 @@ var chptr16_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR16.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR16.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR16.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR16.GDV")):
+			return directory.path_join("GDV/CHPTR16.GDV")
 		else:
 			return ""
 var chptr17_gdv: String :
@@ -2635,6 +2881,8 @@ var chptr17_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR17.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR17.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR17.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR17.GDV")):
+			return directory.path_join("GDV/CHPTR17.GDV")
 		else:
 			return ""
 var chptr18_gdv: String :
@@ -2643,6 +2891,8 @@ var chptr18_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR18.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR18.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR18.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR18.GDV")):
+			return directory.path_join("GDV/CHPTR18.GDV")
 		else:
 			return ""
 var chptr19_gdv: String :
@@ -2651,6 +2901,8 @@ var chptr19_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR19.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR19.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR19.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR19.GDV")):
+			return directory.path_join("GDV/CHPTR19.GDV")
 		else:
 			return ""
 var chptr2_gdv: String :
@@ -2659,6 +2911,8 @@ var chptr2_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR2.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR2.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR2.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR2.GDV")):
+			return directory.path_join("GDV/CHPTR2.GDV")
 		else:
 			return ""
 var chptr20_gdv: String :
@@ -2667,6 +2921,8 @@ var chptr20_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR20.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR20.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR20.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR20.GDV")):
+			return directory.path_join("GDV/CHPTR20.GDV")
 		else:
 			return ""
 var chptr3_gdv: String :
@@ -2675,6 +2931,8 @@ var chptr3_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR3.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR3.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR3.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR3.GDV")):
+			return directory.path_join("GDV/CHPTR3.GDV")
 		else:
 			return ""
 var chptr4_gdv: String :
@@ -2683,6 +2941,8 @@ var chptr4_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR4.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR4.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR4.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR4.GDV")):
+			return directory.path_join("GDV/CHPTR4.GDV")
 		else:
 			return ""
 var chptr5_gdv: String :
@@ -2691,6 +2951,8 @@ var chptr5_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR5.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR5.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR5.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR5.GDV")):
+			return directory.path_join("GDV/CHPTR5.GDV")
 		else:
 			return ""
 var chptr6_gdv: String :
@@ -2699,6 +2961,8 @@ var chptr6_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR6.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR6.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR6.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR6.GDV")):
+			return directory.path_join("GDV/CHPTR6.GDV")
 		else:
 			return ""
 var chptr7_gdv: String :
@@ -2707,6 +2971,8 @@ var chptr7_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR7.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR7.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR7.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR7.GDV")):
+			return directory.path_join("GDV/CHPTR7.GDV")
 		else:
 			return ""
 var chptr8_gdv: String :
@@ -2715,6 +2981,8 @@ var chptr8_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR8.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR8.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR8.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR8.GDV")):
+			return directory.path_join("GDV/CHPTR8.GDV")
 		else:
 			return ""
 var chptr9_gdv: String :
@@ -2723,6 +2991,8 @@ var chptr9_gdv: String :
 			return directory.path_join("ROTH/GDV/CHPTR9.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/CHPTR9.GDV")):
 			return directory.path_join("DATA/GDV/CHPTR9.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/CHPTR9.GDV")):
+			return directory.path_join("GDV/CHPTR9.GDV")
 		else:
 			return ""
 var dodgera_gdv: String :
@@ -2731,6 +3001,8 @@ var dodgera_gdv: String :
 			return directory.path_join("ROTH/GDV/DODGERA.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/DODGERA.GDV")):
 			return directory.path_join("DATA/GDV/DODGERA.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/DODGERA.GDV")):
+			return directory.path_join("GDV/DODGERA.GDV")
 		else:
 			return ""
 var dopple_gdv: String :
@@ -2739,6 +3011,8 @@ var dopple_gdv: String :
 			return directory.path_join("ROTH/GDV/DOPPLE.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/DOPPLE.GDV")):
 			return directory.path_join("DATA/GDV/DOPPLE.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/DOPPLE.GDV")):
+			return directory.path_join("GDV/DOPPLE.GDV")
 		else:
 			return ""
 var ecredits_gdv: String :
@@ -2747,6 +3021,8 @@ var ecredits_gdv: String :
 			return directory.path_join("ROTH/GDV/ECREDITS.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ECREDITS.GDV")):
 			return directory.path_join("DATA/GDV/ECREDITS.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ECREDITS.GDV")):
+			return directory.path_join("GDV/ECREDITS.GDV")
 		else:
 			return ""
 var effigya1_gdv: String :
@@ -2755,6 +3031,8 @@ var effigya1_gdv: String :
 			return directory.path_join("ROTH/GDV/EFFIGYA1.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/EFFIGYA1.GDV")):
 			return directory.path_join("DATA/GDV/EFFIGYA1.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/EFFIGYA1.GDV")):
+			return directory.path_join("GDV/EFFIGYA1.GDV")
 		else:
 			return ""
 var effigya2_gdv: String :
@@ -2763,6 +3041,8 @@ var effigya2_gdv: String :
 			return directory.path_join("ROTH/GDV/EFFIGYA2.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/EFFIGYA2.GDV")):
 			return directory.path_join("DATA/GDV/EFFIGYA2.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/EFFIGYA2.GDV")):
+			return directory.path_join("GDV/EFFIGYA2.GDV")
 		else:
 			return ""
 var effigya3_gdv: String :
@@ -2771,6 +3051,8 @@ var effigya3_gdv: String :
 			return directory.path_join("ROTH/GDV/EFFIGYA3.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/EFFIGYA3.GDV")):
 			return directory.path_join("DATA/GDV/EFFIGYA3.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/EFFIGYA3.GDV")):
+			return directory.path_join("GDV/EFFIGYA3.GDV")
 		else:
 			return ""
 var effigyb_gdv: String :
@@ -2779,6 +3061,8 @@ var effigyb_gdv: String :
 			return directory.path_join("ROTH/GDV/EFFIGYB.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/EFFIGYB.GDV")):
 			return directory.path_join("DATA/GDV/EFFIGYB.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/EFFIGYB.GDV")):
+			return directory.path_join("GDV/EFFIGYB.GDV")
 		else:
 			return ""
 var effigyc_gdv: String :
@@ -2787,6 +3071,8 @@ var effigyc_gdv: String :
 			return directory.path_join("ROTH/GDV/EFFIGYC.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/EFFIGYC.GDV")):
 			return directory.path_join("DATA/GDV/EFFIGYC.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/EFFIGYC.GDV")):
+			return directory.path_join("GDV/EFFIGYC.GDV")
 		else:
 			return ""
 var enchant_gdv: String :
@@ -2795,6 +3081,8 @@ var enchant_gdv: String :
 			return directory.path_join("ROTH/GDV/ENCHANT.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/ENCHANT.GDV")):
 			return directory.path_join("DATA/GDV/ENCHANT.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/ENCHANT.GDV")):
+			return directory.path_join("GDV/ENCHANT.GDV")
 		else:
 			return ""
 var epilogue_gdv: String :
@@ -2803,6 +3091,8 @@ var epilogue_gdv: String :
 			return directory.path_join("ROTH/GDV/EPILOGUE.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/EPILOGUE.GDV")):
 			return directory.path_join("DATA/GDV/EPILOGUE.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/EPILOGUE.GDV")):
+			return directory.path_join("GDV/EPILOGUE.GDV")
 		else:
 			return ""
 var epilogue_mp4: String :
@@ -2811,6 +3101,8 @@ var epilogue_mp4: String :
 			return directory.path_join("ROTH/GDV/EPILOGUE.mp4")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/EPILOGUE.mp4")):
 			return directory.path_join("DATA/GDV/EPILOGUE.mp4")
+		elif FileAccess.file_exists(directory.path_join("GDV/EPILOGUE.mp4")):
+			return directory.path_join("GDV/EPILOGUE.mp4")
 		else:
 			return ""
 var falshire_gdv: String :
@@ -2819,14 +3111,8 @@ var falshire_gdv: String :
 			return directory.path_join("ROTH/GDV/FALSHIRE.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/FALSHIRE.GDV")):
 			return directory.path_join("DATA/GDV/FALSHIRE.GDV")
-		else:
-			return ""
-var falshire_mp4: String :
-	get():
-		if FileAccess.file_exists(directory.path_join("ROTH/GDV/FALSHIRE.mp4")):
-			return directory.path_join("ROTH/GDV/FALSHIRE.mp4")
-		elif FileAccess.file_exists(directory.path_join("DATA/GDV/FALSHIRE.mp4")):
-			return directory.path_join("DATA/GDV/FALSHIRE.mp4")
+		elif FileAccess.file_exists(directory.path_join("GDV/FALSHIRE.GDV")):
+			return directory.path_join("GDV/FALSHIRE.GDV")
 		else:
 			return ""
 var flotrap1_gdv: String :
@@ -2835,6 +3121,8 @@ var flotrap1_gdv: String :
 			return directory.path_join("ROTH/GDV/FLOTRAP1.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/FLOTRAP1.GDV")):
 			return directory.path_join("DATA/GDV/FLOTRAP1.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/FLOTRAP1.GDV")):
+			return directory.path_join("GDV/FLOTRAP1.GDV")
 		else:
 			return ""
 var flotrap2_gdv: String :
@@ -2843,6 +3131,8 @@ var flotrap2_gdv: String :
 			return directory.path_join("ROTH/GDV/FLOTRAP2.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/FLOTRAP2.GDV")):
 			return directory.path_join("DATA/GDV/FLOTRAP2.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/FLOTRAP2.GDV")):
+			return directory.path_join("GDV/FLOTRAP2.GDV")
 		else:
 			return ""
 var flotrap3_gdv: String :
@@ -2851,6 +3141,8 @@ var flotrap3_gdv: String :
 			return directory.path_join("ROTH/GDV/FLOTRAP3.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/FLOTRAP3.GDV")):
 			return directory.path_join("DATA/GDV/FLOTRAP3.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/FLOTRAP3.GDV")):
+			return directory.path_join("GDV/FLOTRAP3.GDV")
 		else:
 			return ""
 var flotrap4_gdv: String :
@@ -2859,6 +3151,8 @@ var flotrap4_gdv: String :
 			return directory.path_join("ROTH/GDV/FLOTRAP4.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/FLOTRAP4.GDV")):
 			return directory.path_join("DATA/GDV/FLOTRAP4.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/FLOTRAP4.GDV")):
+			return directory.path_join("GDV/FLOTRAP4.GDV")
 		else:
 			return ""
 var flotrap5_gdv: String :
@@ -2867,6 +3161,8 @@ var flotrap5_gdv: String :
 			return directory.path_join("ROTH/GDV/FLOTRAP5.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/FLOTRAP5.GDV")):
 			return directory.path_join("DATA/GDV/FLOTRAP5.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/FLOTRAP5.GDV")):
+			return directory.path_join("GDV/FLOTRAP5.GDV")
 		else:
 			return ""
 var flotrap6_gdv: String :
@@ -2875,6 +3171,8 @@ var flotrap6_gdv: String :
 			return directory.path_join("ROTH/GDV/FLOTRAP6.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/FLOTRAP6.GDV")):
 			return directory.path_join("DATA/GDV/FLOTRAP6.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/FLOTRAP6.GDV")):
+			return directory.path_join("GDV/FLOTRAP6.GDV")
 		else:
 			return ""
 var fullkeep_gdv: String :
@@ -2883,6 +3181,8 @@ var fullkeep_gdv: String :
 			return directory.path_join("ROTH/GDV/FULLKEEP.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/FULLKEEP.GDV")):
 			return directory.path_join("DATA/GDV/FULLKEEP.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/FULLKEEP.GDV")):
+			return directory.path_join("GDV/FULLKEEP.GDV")
 		else:
 			return ""
 var gardens_gdv: String :
@@ -2891,6 +3191,8 @@ var gardens_gdv: String :
 			return directory.path_join("ROTH/GDV/GARDENS.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GARDENS.GDV")):
 			return directory.path_join("DATA/GDV/GARDENS.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GARDENS.GDV")):
+			return directory.path_join("GDV/GARDENS.GDV")
 		else:
 			return ""
 var gate01a_gdv: String :
@@ -2899,6 +3201,8 @@ var gate01a_gdv: String :
 			return directory.path_join("ROTH/GDV/GATE01A.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GATE01A.GDV")):
 			return directory.path_join("DATA/GDV/GATE01A.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GATE01A.GDV")):
+			return directory.path_join("GDV/GATE01A.GDV")
 		else:
 			return ""
 var gate01b_gdv: String :
@@ -2907,6 +3211,8 @@ var gate01b_gdv: String :
 			return directory.path_join("ROTH/GDV/GATE01B.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GATE01B.GDV")):
 			return directory.path_join("DATA/GDV/GATE01B.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GATE01B.GDV")):
+			return directory.path_join("GDV/GATE01B.GDV")
 		else:
 			return ""
 var gaul01_gdv: String :
@@ -2915,6 +3221,8 @@ var gaul01_gdv: String :
 			return directory.path_join("ROTH/GDV/GAUL01.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GAUL01.GDV")):
 			return directory.path_join("DATA/GDV/GAUL01.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GAUL01.GDV")):
+			return directory.path_join("GDV/GAUL01.GDV")
 		else:
 			return ""
 var gaul02_gdv: String :
@@ -2923,6 +3231,8 @@ var gaul02_gdv: String :
 			return directory.path_join("ROTH/GDV/GAUL02.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GAUL02.GDV")):
 			return directory.path_join("DATA/GDV/GAUL02.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GAUL02.GDV")):
+			return directory.path_join("GDV/GAUL02.GDV")
 		else:
 			return ""
 var glasswin_gdv: String :
@@ -2931,6 +3241,8 @@ var glasswin_gdv: String :
 			return directory.path_join("ROTH/GDV/GLASSWIN.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GLASSWIN.GDV")):
 			return directory.path_join("DATA/GDV/GLASSWIN.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GLASSWIN.GDV")):
+			return directory.path_join("GDV/GLASSWIN.GDV")
 		else:
 			return ""
 var gnarla_gdv: String :
@@ -2939,6 +3251,8 @@ var gnarla_gdv: String :
 			return directory.path_join("ROTH/GDV/GNARLA.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GNARLA.GDV")):
 			return directory.path_join("DATA/GDV/GNARLA.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GNARLA.GDV")):
+			return directory.path_join("GDV/GNARLA.GDV")
 		else:
 			return ""
 var gnarlb_gdv: String :
@@ -2947,6 +3261,8 @@ var gnarlb_gdv: String :
 			return directory.path_join("ROTH/GDV/GNARLB.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GNARLB.GDV")):
 			return directory.path_join("DATA/GDV/GNARLB.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GNARLB.GDV")):
+			return directory.path_join("GDV/GNARLB.GDV")
 		else:
 			return ""
 var gnarlc_gdv: String :
@@ -2955,6 +3271,8 @@ var gnarlc_gdv: String :
 			return directory.path_join("ROTH/GDV/GNARLC.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GNARLC.GDV")):
 			return directory.path_join("DATA/GDV/GNARLC.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GNARLC.GDV")):
+			return directory.path_join("GDV/GNARLC.GDV")
 		else:
 			return ""
 var gnarld_gdv: String :
@@ -2963,6 +3281,8 @@ var gnarld_gdv: String :
 			return directory.path_join("ROTH/GDV/GNARLD.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GNARLD.GDV")):
 			return directory.path_join("DATA/GDV/GNARLD.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GNARLD.GDV")):
+			return directory.path_join("GDV/GNARLD.GDV")
 		else:
 			return ""
 var gnarle_gdv: String :
@@ -2971,6 +3291,8 @@ var gnarle_gdv: String :
 			return directory.path_join("ROTH/GDV/GNARLE.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GNARLE.GDV")):
 			return directory.path_join("DATA/GDV/GNARLE.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GNARLE.GDV")):
+			return directory.path_join("GDV/GNARLE.GDV")
 		else:
 			return ""
 var gnarlf_gdv: String :
@@ -2979,6 +3301,8 @@ var gnarlf_gdv: String :
 			return directory.path_join("ROTH/GDV/GNARLF.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GNARLF.GDV")):
 			return directory.path_join("DATA/GDV/GNARLF.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GNARLF.GDV")):
+			return directory.path_join("GDV/GNARLF.GDV")
 		else:
 			return ""
 var gnarlg_gdv: String :
@@ -2987,6 +3311,8 @@ var gnarlg_gdv: String :
 			return directory.path_join("ROTH/GDV/GNARLG.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GNARLG.GDV")):
 			return directory.path_join("DATA/GDV/GNARLG.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GNARLG.GDV")):
+			return directory.path_join("GDV/GNARLG.GDV")
 		else:
 			return ""
 var gnarlh_gdv: String :
@@ -2995,6 +3321,8 @@ var gnarlh_gdv: String :
 			return directory.path_join("ROTH/GDV/GNARLH.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GNARLH.GDV")):
 			return directory.path_join("DATA/GDV/GNARLH.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GNARLH.GDV")):
+			return directory.path_join("GDV/GNARLH.GDV")
 		else:
 			return ""
 var gnarli_gdv: String :
@@ -3003,6 +3331,8 @@ var gnarli_gdv: String :
 			return directory.path_join("ROTH/GDV/GNARLI.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GNARLI.GDV")):
 			return directory.path_join("DATA/GDV/GNARLI.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GNARLI.GDV")):
+			return directory.path_join("GDV/GNARLI.GDV")
 		else:
 			return ""
 var gremlogo_gdv: String :
@@ -3011,6 +3341,8 @@ var gremlogo_gdv: String :
 			return directory.path_join("ROTH/GDV/GREMLOGO.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/GREMLOGO.GDV")):
 			return directory.path_join("DATA/GDV/GREMLOGO.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/GREMLOGO.GDV")):
+			return directory.path_join("GDV/GREMLOGO.GDV")
 		else:
 			return ""
 var hawk01_gdv: String :
@@ -3019,6 +3351,8 @@ var hawk01_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK01.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK01.GDV")):
 			return directory.path_join("DATA/GDV/HAWK01.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK01.GDV")):
+			return directory.path_join("GDV/HAWK01.GDV")
 		else:
 			return ""
 var hawk02a_gdv: String :
@@ -3027,6 +3361,8 @@ var hawk02a_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK02A.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK02A.GDV")):
 			return directory.path_join("DATA/GDV/HAWK02A.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK02A.GDV")):
+			return directory.path_join("GDV/HAWK02A.GDV")
 		else:
 			return ""
 var hawk02b_gdv: String :
@@ -3035,6 +3371,8 @@ var hawk02b_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK02B.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK02B.GDV")):
 			return directory.path_join("DATA/GDV/HAWK02B.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK02B.GDV")):
+			return directory.path_join("GDV/HAWK02B.GDV")
 		else:
 			return ""
 var hawk02c_gdv: String :
@@ -3043,6 +3381,8 @@ var hawk02c_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK02C.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK02C.GDV")):
 			return directory.path_join("DATA/GDV/HAWK02C.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK02C.GDV")):
+			return directory.path_join("GDV/HAWK02C.GDV")
 		else:
 			return ""
 var hawk02d_gdv: String :
@@ -3051,6 +3391,8 @@ var hawk02d_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK02D.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK02D.GDV")):
 			return directory.path_join("DATA/GDV/HAWK02D.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK02D.GDV")):
+			return directory.path_join("GDV/HAWK02D.GDV")
 		else:
 			return ""
 var hawk03a_gdv: String :
@@ -3059,6 +3401,8 @@ var hawk03a_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03A.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03A.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03A.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03A.GDV")):
+			return directory.path_join("GDV/HAWK03A.GDV")
 		else:
 			return ""
 var hawk03b_gdv: String :
@@ -3067,6 +3411,8 @@ var hawk03b_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03B.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03B.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03B.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03B.GDV")):
+			return directory.path_join("GDV/HAWK03B.GDV")
 		else:
 			return ""
 var hawk03c_gdv: String :
@@ -3075,6 +3421,8 @@ var hawk03c_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03C.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03C.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03C.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03C.GDV")):
+			return directory.path_join("GDV/HAWK03C.GDV")
 		else:
 			return ""
 var hawk03d_gdv: String :
@@ -3083,6 +3431,8 @@ var hawk03d_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03D.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03D.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03D.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03D.GDV")):
+			return directory.path_join("GDV/HAWK03D.GDV")
 		else:
 			return ""
 var hawk03e_gdv: String :
@@ -3091,6 +3441,8 @@ var hawk03e_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03E.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03E.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03E.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03E.GDV")):
+			return directory.path_join("GDV/HAWK03E.GDV")
 		else:
 			return ""
 var hawk03f_gdv: String :
@@ -3099,6 +3451,8 @@ var hawk03f_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03F.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03F.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03F.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03F.GDV")):
+			return directory.path_join("GDV/HAWK03F.GDV")
 		else:
 			return ""
 var hawk03g_gdv: String :
@@ -3107,6 +3461,8 @@ var hawk03g_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03G.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03G.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03G.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03G.GDV")):
+			return directory.path_join("GDV/HAWK03G.GDV")
 		else:
 			return ""
 var hawk03h_gdv: String :
@@ -3115,6 +3471,8 @@ var hawk03h_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03H.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03H.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03H.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03H.GDV")):
+			return directory.path_join("GDV/HAWK03H.GDV")
 		else:
 			return ""
 var hawk03i_gdv: String :
@@ -3123,6 +3481,8 @@ var hawk03i_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03I.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03I.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03I.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03I.GDV")):
+			return directory.path_join("GDV/HAWK03I.GDV")
 		else:
 			return ""
 var hawk03j_gdv: String :
@@ -3131,6 +3491,8 @@ var hawk03j_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03J.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03J.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03J.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03J.GDV")):
+			return directory.path_join("GDV/HAWK03J.GDV")
 		else:
 			return ""
 var hawk03k_gdv: String :
@@ -3139,6 +3501,8 @@ var hawk03k_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03K.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03K.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03K.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03K.GDV")):
+			return directory.path_join("GDV/HAWK03K.GDV")
 		else:
 			return ""
 var hawk03l_gdv: String :
@@ -3147,6 +3511,8 @@ var hawk03l_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03L.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03L.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03L.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03L.GDV")):
+			return directory.path_join("GDV/HAWK03L.GDV")
 		else:
 			return ""
 var hawk03m_gdv: String :
@@ -3155,6 +3521,8 @@ var hawk03m_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03M.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03M.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03M.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03M.GDV")):
+			return directory.path_join("GDV/HAWK03M.GDV")
 		else:
 			return ""
 var hawk03n_gdv: String :
@@ -3163,6 +3531,8 @@ var hawk03n_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03N.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03N.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03N.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03N.GDV")):
+			return directory.path_join("GDV/HAWK03N.GDV")
 		else:
 			return ""
 var hawk03o_gdv: String :
@@ -3171,6 +3541,8 @@ var hawk03o_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03O.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03O.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03O.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03O.GDV")):
+			return directory.path_join("GDV/HAWK03O.GDV")
 		else:
 			return ""
 var hawk03p_gdv: String :
@@ -3179,6 +3551,8 @@ var hawk03p_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK03P.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK03P.GDV")):
 			return directory.path_join("DATA/GDV/HAWK03P.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK03P.GDV")):
+			return directory.path_join("GDV/HAWK03P.GDV")
 		else:
 			return ""
 var hawk04_gdv: String :
@@ -3187,6 +3561,8 @@ var hawk04_gdv: String :
 			return directory.path_join("ROTH/GDV/HAWK04.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/HAWK04.GDV")):
 			return directory.path_join("DATA/GDV/HAWK04.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/HAWK04.GDV")):
+			return directory.path_join("GDV/HAWK04.GDV")
 		else:
 			return ""
 var instra_gdv: String :
@@ -3195,6 +3571,8 @@ var instra_gdv: String :
 			return directory.path_join("ROTH/GDV/INSTRA.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/INSTRA.GDV")):
 			return directory.path_join("DATA/GDV/INSTRA.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/INSTRA.GDV")):
+			return directory.path_join("GDV/INSTRA.GDV")
 		else:
 			return ""
 var instrb_gdv: String :
@@ -3203,6 +3581,8 @@ var instrb_gdv: String :
 			return directory.path_join("ROTH/GDV/INSTRB.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/INSTRB.GDV")):
 			return directory.path_join("DATA/GDV/INSTRB.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/INSTRB.GDV")):
+			return directory.path_join("GDV/INSTRB.GDV")
 		else:
 			return ""
 var instrc_gdv: String :
@@ -3211,6 +3591,8 @@ var instrc_gdv: String :
 			return directory.path_join("ROTH/GDV/INSTRC.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/INSTRC.GDV")):
 			return directory.path_join("DATA/GDV/INSTRC.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/INSTRC.GDV")):
+			return directory.path_join("GDV/INSTRC.GDV")
 		else:
 			return ""
 var instrd_gdv: String :
@@ -3219,6 +3601,8 @@ var instrd_gdv: String :
 			return directory.path_join("ROTH/GDV/INSTRD.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/INSTRD.GDV")):
 			return directory.path_join("DATA/GDV/INSTRD.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/INSTRD.GDV")):
+			return directory.path_join("GDV/INSTRD.GDV")
 		else:
 			return ""
 var instre_gdv: String :
@@ -3227,6 +3611,8 @@ var instre_gdv: String :
 			return directory.path_join("ROTH/GDV/INSTRE.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/INSTRE.GDV")):
 			return directory.path_join("DATA/GDV/INSTRE.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/INSTRE.GDV")):
+			return directory.path_join("GDV/INSTRE.GDV")
 		else:
 			return ""
 var instrf_gdv: String :
@@ -3235,6 +3621,8 @@ var instrf_gdv: String :
 			return directory.path_join("ROTH/GDV/INSTRF.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/INSTRF.GDV")):
 			return directory.path_join("DATA/GDV/INSTRF.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/INSTRF.GDV")):
+			return directory.path_join("GDV/INSTRF.GDV")
 		else:
 			return ""
 var instrg_gdv: String :
@@ -3243,6 +3631,8 @@ var instrg_gdv: String :
 			return directory.path_join("ROTH/GDV/INSTRG.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/INSTRG.GDV")):
 			return directory.path_join("DATA/GDV/INSTRG.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/INSTRG.GDV")):
+			return directory.path_join("GDV/INSTRG.GDV")
 		else:
 			return ""
 var instrh_gdv: String :
@@ -3251,6 +3641,8 @@ var instrh_gdv: String :
 			return directory.path_join("ROTH/GDV/INSTRH.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/INSTRH.GDV")):
 			return directory.path_join("DATA/GDV/INSTRH.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/INSTRH.GDV")):
+			return directory.path_join("GDV/INSTRH.GDV")
 		else:
 			return ""
 var instri_gdv: String :
@@ -3259,6 +3651,8 @@ var instri_gdv: String :
 			return directory.path_join("ROTH/GDV/INSTRI.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/INSTRI.GDV")):
 			return directory.path_join("DATA/GDV/INSTRI.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/INSTRI.GDV")):
+			return directory.path_join("GDV/INSTRI.GDV")
 		else:
 			return ""
 var intro_gdv: String :
@@ -3267,6 +3661,8 @@ var intro_gdv: String :
 			return directory.path_join("ROTH/GDV/INTRO.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/INTRO.GDV")):
 			return directory.path_join("DATA/GDV/INTRO.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/INTRO.GDV")):
+			return directory.path_join("GDV/INTRO.GDV")
 		else:
 			return ""
 var movie_gdv: String :
@@ -3275,6 +3671,8 @@ var movie_gdv: String :
 			return directory.path_join("ROTH/GDV/MOVIE.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/MOVIE.GDV")):
 			return directory.path_join("DATA/GDV/MOVIE.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/MOVIE.GDV")):
+			return directory.path_join("GDV/MOVIE.GDV")
 		else:
 			return ""
 var randall_gdv: String :
@@ -3283,6 +3681,8 @@ var randall_gdv: String :
 			return directory.path_join("ROTH/GDV/RANDALL.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RANDALL.GDV")):
 			return directory.path_join("DATA/GDV/RANDALL.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RANDALL.GDV")):
+			return directory.path_join("GDV/RANDALL.GDV")
 		else:
 			return ""
 var raphael_gdv: String :
@@ -3291,6 +3691,8 @@ var raphael_gdv: String :
 			return directory.path_join("ROTH/GDV/RAPHAEL.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAPHAEL.GDV")):
 			return directory.path_join("DATA/GDV/RAPHAEL.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAPHAEL.GDV")):
+			return directory.path_join("GDV/RAPHAEL.GDV")
 		else:
 			return ""
 var raphaelh_gdv: String :
@@ -3299,6 +3701,8 @@ var raphaelh_gdv: String :
 			return directory.path_join("ROTH/GDV/RAPHAELH.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAPHAELH.GDV")):
 			return directory.path_join("DATA/GDV/RAPHAELH.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAPHAELH.GDV")):
+			return directory.path_join("GDV/RAPHAELH.GDV")
 		else:
 			return ""
 var raphaeli_gdv: String :
@@ -3307,6 +3711,8 @@ var raphaeli_gdv: String :
 			return directory.path_join("ROTH/GDV/RAPHAELI.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAPHAELI.GDV")):
 			return directory.path_join("DATA/GDV/RAPHAELI.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAPHAELI.GDV")):
+			return directory.path_join("GDV/RAPHAELI.GDV")
 		else:
 			return ""
 var raphaelj_gdv: String :
@@ -3315,6 +3721,8 @@ var raphaelj_gdv: String :
 			return directory.path_join("ROTH/GDV/RAPHAELJ.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAPHAELJ.GDV")):
 			return directory.path_join("DATA/GDV/RAPHAELJ.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAPHAELJ.GDV")):
+			return directory.path_join("GDV/RAPHAELJ.GDV")
 		else:
 			return ""
 var raphaelk_gdv: String :
@@ -3323,6 +3731,8 @@ var raphaelk_gdv: String :
 			return directory.path_join("ROTH/GDV/RAPHAELK.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAPHAELK.GDV")):
 			return directory.path_join("DATA/GDV/RAPHAELK.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAPHAELK.GDV")):
+			return directory.path_join("GDV/RAPHAELK.GDV")
 		else:
 			return ""
 var raphaell_gdv: String :
@@ -3331,6 +3741,8 @@ var raphaell_gdv: String :
 			return directory.path_join("ROTH/GDV/RAPHAELL.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAPHAELL.GDV")):
 			return directory.path_join("DATA/GDV/RAPHAELL.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAPHAELL.GDV")):
+			return directory.path_join("GDV/RAPHAELL.GDV")
 		else:
 			return ""
 var raphaelm_gdv: String :
@@ -3339,6 +3751,8 @@ var raphaelm_gdv: String :
 			return directory.path_join("ROTH/GDV/RAPHAELM.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAPHAELM.GDV")):
 			return directory.path_join("DATA/GDV/RAPHAELM.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAPHAELM.GDV")):
+			return directory.path_join("GDV/RAPHAELM.GDV")
 		else:
 			return ""
 var raphaeln_gdv: String :
@@ -3347,6 +3761,8 @@ var raphaeln_gdv: String :
 			return directory.path_join("ROTH/GDV/RAPHAELN.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAPHAELN.GDV")):
 			return directory.path_join("DATA/GDV/RAPHAELN.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAPHAELN.GDV")):
+			return directory.path_join("GDV/RAPHAELN.GDV")
 		else:
 			return ""
 var raphaelo_gdv: String :
@@ -3355,6 +3771,8 @@ var raphaelo_gdv: String :
 			return directory.path_join("ROTH/GDV/RAPHAELO.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAPHAELO.GDV")):
 			return directory.path_join("DATA/GDV/RAPHAELO.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAPHAELO.GDV")):
+			return directory.path_join("GDV/RAPHAELO.GDV")
 		else:
 			return ""
 var ratpfa_gdv: String :
@@ -3363,6 +3781,8 @@ var ratpfa_gdv: String :
 			return directory.path_join("ROTH/GDV/RATPFA.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RATPFA.GDV")):
 			return directory.path_join("DATA/GDV/RATPFA.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RATPFA.GDV")):
+			return directory.path_join("GDV/RATPFA.GDV")
 		else:
 			return ""
 var ratpfb_gdv: String :
@@ -3371,6 +3791,8 @@ var ratpfb_gdv: String :
 			return directory.path_join("ROTH/GDV/RATPFB.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RATPFB.GDV")):
 			return directory.path_join("DATA/GDV/RATPFB.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RATPFB.GDV")):
+			return directory.path_join("GDV/RATPFB.GDV")
 		else:
 			return ""
 var raysel1a_gdv: String :
@@ -3379,6 +3801,8 @@ var raysel1a_gdv: String :
 			return directory.path_join("ROTH/GDV/RAYSEL1A.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAYSEL1A.GDV")):
 			return directory.path_join("DATA/GDV/RAYSEL1A.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAYSEL1A.GDV")):
+			return directory.path_join("GDV/RAYSEL1A.GDV")
 		else:
 			return ""
 var raysel1b_gdv: String :
@@ -3387,6 +3811,8 @@ var raysel1b_gdv: String :
 			return directory.path_join("ROTH/GDV/RAYSEL1B.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAYSEL1B.GDV")):
 			return directory.path_join("DATA/GDV/RAYSEL1B.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAYSEL1B.GDV")):
+			return directory.path_join("GDV/RAYSEL1B.GDV")
 		else:
 			return ""
 var raysel1c_gdv: String :
@@ -3395,6 +3821,8 @@ var raysel1c_gdv: String :
 			return directory.path_join("ROTH/GDV/RAYSEL1C.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAYSEL1C.GDV")):
 			return directory.path_join("DATA/GDV/RAYSEL1C.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAYSEL1C.GDV")):
+			return directory.path_join("GDV/RAYSEL1C.GDV")
 		else:
 			return ""
 var raysel1d_gdv: String :
@@ -3403,6 +3831,8 @@ var raysel1d_gdv: String :
 			return directory.path_join("ROTH/GDV/RAYSEL1D.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAYSEL1D.GDV")):
 			return directory.path_join("DATA/GDV/RAYSEL1D.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAYSEL1D.GDV")):
+			return directory.path_join("GDV/RAYSEL1D.GDV")
 		else:
 			return ""
 var raysel1e_gdv: String :
@@ -3411,6 +3841,8 @@ var raysel1e_gdv: String :
 			return directory.path_join("ROTH/GDV/RAYSEL1E.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAYSEL1E.GDV")):
 			return directory.path_join("DATA/GDV/RAYSEL1E.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAYSEL1E.GDV")):
+			return directory.path_join("GDV/RAYSEL1E.GDV")
 		else:
 			return ""
 var raysel1f_gdv: String :
@@ -3419,6 +3851,8 @@ var raysel1f_gdv: String :
 			return directory.path_join("ROTH/GDV/RAYSEL1F.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAYSEL1F.GDV")):
 			return directory.path_join("DATA/GDV/RAYSEL1F.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAYSEL1F.GDV")):
+			return directory.path_join("GDV/RAYSEL1F.GDV")
 		else:
 			return ""
 var raysel1g_gdv: String :
@@ -3427,6 +3861,8 @@ var raysel1g_gdv: String :
 			return directory.path_join("ROTH/GDV/RAYSEL1G.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RAYSEL1G.GDV")):
 			return directory.path_join("DATA/GDV/RAYSEL1G.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RAYSEL1G.GDV")):
+			return directory.path_join("GDV/RAYSEL1G.GDV")
 		else:
 			return ""
 var rebecca_gdv: String :
@@ -3435,6 +3871,8 @@ var rebecca_gdv: String :
 			return directory.path_join("ROTH/GDV/REBECCA.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/REBECCA.GDV")):
 			return directory.path_join("DATA/GDV/REBECCA.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/REBECCA.GDV")):
+			return directory.path_join("GDV/REBECCA.GDV")
 		else:
 			return ""
 var reflecta_gdv: String :
@@ -3443,6 +3881,8 @@ var reflecta_gdv: String :
 			return directory.path_join("ROTH/GDV/REFLECTA.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/REFLECTA.GDV")):
 			return directory.path_join("DATA/GDV/REFLECTA.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/REFLECTA.GDV")):
+			return directory.path_join("GDV/REFLECTA.GDV")
 		else:
 			return ""
 var reflectb_gdv: String :
@@ -3451,6 +3891,8 @@ var reflectb_gdv: String :
 			return directory.path_join("ROTH/GDV/REFLECTB.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/REFLECTB.GDV")):
 			return directory.path_join("DATA/GDV/REFLECTB.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/REFLECTB.GDV")):
+			return directory.path_join("GDV/REFLECTB.GDV")
 		else:
 			return ""
 var reflectc_gdv: String :
@@ -3459,6 +3901,8 @@ var reflectc_gdv: String :
 			return directory.path_join("ROTH/GDV/REFLECTC.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/REFLECTC.GDV")):
 			return directory.path_join("DATA/GDV/REFLECTC.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/REFLECTC.GDV")):
+			return directory.path_join("GDV/REFLECTC.GDV")
 		else:
 			return ""
 var ritual_gdv: String :
@@ -3467,6 +3911,8 @@ var ritual_gdv: String :
 			return directory.path_join("ROTH/GDV/RITUAL.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/RITUAL.GDV")):
 			return directory.path_join("DATA/GDV/RITUAL.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/RITUAL.GDV")):
+			return directory.path_join("GDV/RITUAL.GDV")
 		else:
 			return ""
 var shrivea_gdv: String :
@@ -3475,6 +3921,8 @@ var shrivea_gdv: String :
 			return directory.path_join("ROTH/GDV/SHRIVEA.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/SHRIVEA.GDV")):
 			return directory.path_join("DATA/GDV/SHRIVEA.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/SHRIVEA.GDV")):
+			return directory.path_join("GDV/SHRIVEA.GDV")
 		else:
 			return ""
 var shriveb_gdv: String :
@@ -3483,6 +3931,8 @@ var shriveb_gdv: String :
 			return directory.path_join("ROTH/GDV/SHRIVEB.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/SHRIVEB.GDV")):
 			return directory.path_join("DATA/GDV/SHRIVEB.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/SHRIVEB.GDV")):
+			return directory.path_join("GDV/SHRIVEB.GDV")
 		else:
 			return ""
 var shrivec_gdv: String :
@@ -3491,6 +3941,8 @@ var shrivec_gdv: String :
 			return directory.path_join("ROTH/GDV/SHRIVEC.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/SHRIVEC.GDV")):
 			return directory.path_join("DATA/GDV/SHRIVEC.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/SHRIVEC.GDV")):
+			return directory.path_join("GDV/SHRIVEC.GDV")
 		else:
 			return ""
 var shrived_gdv: String :
@@ -3499,6 +3951,8 @@ var shrived_gdv: String :
 			return directory.path_join("ROTH/GDV/SHRIVED.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/SHRIVED.GDV")):
 			return directory.path_join("DATA/GDV/SHRIVED.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/SHRIVED.GDV")):
+			return directory.path_join("GDV/SHRIVED.GDV")
 		else:
 			return ""
 var talewela_gdv: String :
@@ -3507,6 +3961,8 @@ var talewela_gdv: String :
 			return directory.path_join("ROTH/GDV/TALEWELA.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/TALEWELA.GDV")):
 			return directory.path_join("DATA/GDV/TALEWELA.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/TALEWELA.GDV")):
+			return directory.path_join("GDV/TALEWELA.GDV")
 		else:
 			return ""
 var talewelb_gdv: String :
@@ -3515,6 +3971,8 @@ var talewelb_gdv: String :
 			return directory.path_join("ROTH/GDV/TALEWELB.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/TALEWELB.GDV")):
 			return directory.path_join("DATA/GDV/TALEWELB.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/TALEWELB.GDV")):
+			return directory.path_join("GDV/TALEWELB.GDV")
 		else:
 			return ""
 var talewelc_gdv: String :
@@ -3523,6 +3981,8 @@ var talewelc_gdv: String :
 			return directory.path_join("ROTH/GDV/TALEWELC.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/TALEWELC.GDV")):
 			return directory.path_join("DATA/GDV/TALEWELC.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/TALEWELC.GDV")):
+			return directory.path_join("GDV/TALEWELC.GDV")
 		else:
 			return ""
 var tunnwarp_gdv: String :
@@ -3531,6 +3991,8 @@ var tunnwarp_gdv: String :
 			return directory.path_join("ROTH/GDV/TUNNWARP.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/TUNNWARP.GDV")):
 			return directory.path_join("DATA/GDV/TUNNWARP.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/TUNNWARP.GDV")):
+			return directory.path_join("GDV/TUNNWARP.GDV")
 		else:
 			return ""
 var verse_gdv: String :
@@ -3539,6 +4001,8 @@ var verse_gdv: String :
 			return directory.path_join("ROTH/GDV/VERSE.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/VERSE.GDV")):
 			return directory.path_join("DATA/GDV/VERSE.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/VERSE.GDV")):
+			return directory.path_join("GDV/VERSE.GDV")
 		else:
 			return ""
 var walkway1_gdv: String :
@@ -3547,6 +4011,8 @@ var walkway1_gdv: String :
 			return directory.path_join("ROTH/GDV/WALKWAY1.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/WALKWAY1.GDV")):
 			return directory.path_join("DATA/GDV/WALKWAY1.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/WALKWAY1.GDV")):
+			return directory.path_join("GDV/WALKWAY1.GDV")
 		else:
 			return ""
 var walkway2_gdv: String :
@@ -3555,6 +4021,8 @@ var walkway2_gdv: String :
 			return directory.path_join("ROTH/GDV/WALKWAY2.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/WALKWAY2.GDV")):
 			return directory.path_join("DATA/GDV/WALKWAY2.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/WALKWAY2.GDV")):
+			return directory.path_join("GDV/WALKWAY2.GDV")
 		else:
 			return ""
 var walkway3_gdv: String :
@@ -3563,6 +4031,8 @@ var walkway3_gdv: String :
 			return directory.path_join("ROTH/GDV/WALKWAY3.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/WALKWAY3.GDV")):
 			return directory.path_join("DATA/GDV/WALKWAY3.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/WALKWAY3.GDV")):
+			return directory.path_join("GDV/WALKWAY3.GDV")
 		else:
 			return ""
 var walkwy1a_gdv: String :
@@ -3571,6 +4041,10 @@ var walkwy1a_gdv: String :
 			return directory.path_join("ROTH/GDV/WALKWY1A.GDV")
 		elif FileAccess.file_exists(directory.path_join("DATA/GDV/WALKWY1A.GDV")):
 			return directory.path_join("DATA/GDV/WALKWY1A.GDV")
+		elif FileAccess.file_exists(directory.path_join("GDV/WALKWY1A.GDV")):
+			return directory.path_join("GDV/WALKWY1A.GDV")
+		else:
+			return ""
 var iplogo_gdv: String :
 	get():
 		if FileAccess.file_exists(directory.path_join("ROTH/GDV/IPLOGO.GDV")):
@@ -3621,7 +4095,6 @@ var dosbox_config: String :
 			return directory.path_join("dosboxROTH.conf")
 		else:
 			return ""
-
 #endregion
 
 var valid: Variant = null
@@ -4039,7 +4512,6 @@ func _to_string() -> String:
 		epilogue_gdv = epilogue_gdv,
 		epilogue_mp4 = epilogue_mp4,
 		falshire_gdv = falshire_gdv,
-		falshire_mp4 = falshire_mp4,
 		flotrap1_gdv = flotrap1_gdv,
 		flotrap2_gdv = flotrap2_gdv,
 		flotrap3_gdv = flotrap3_gdv,
