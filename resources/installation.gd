@@ -4129,3 +4129,58 @@ func is_valid() -> bool:
 
 func verify_installation_integrity() -> void:
 	pass
+
+
+func populate_custom_install(new_directory: String) -> bool:
+	if DirAccess.dir_exists_absolute(new_directory):
+		if (FileAccess.file_exists(new_directory.path_join("ROTH.EXE"))
+			and FileAccess.file_exists(new_directory.path_join("CONFIG.INI"))
+			and FileAccess.file_exists(new_directory.path_join("ROTH.INI"))
+			and FileAccess.file_exists(new_directory.path_join("DOS4GW.EXE"))
+			and FileAccess.file_exists(new_directory.path_join("DATA/FILELIST.TXT"))
+			and FileAccess.file_exists(new_directory.path_join("DIGI/HMIDET.386"))
+			and FileAccess.file_exists(new_directory.path_join("DIGI/HMIDRV.386"))
+			and FileAccess.file_exists(new_directory.path_join("MIDI/HMIMDRV.386"))
+			and FileAccess.file_exists(new_directory.path_join("MIDI/DRUM.BNK"))
+			and FileAccess.file_exists(new_directory.path_join("MIDI/MELODIC.BNK"))
+		):
+			return true
+		else:
+			Utility.remove_dir_recursive(new_directory)
+	
+	DirAccess.make_dir_recursive_absolute(new_directory.path_join("DATA"))
+	DirAccess.make_dir_recursive_absolute(new_directory.path_join("DIGI"))
+	DirAccess.make_dir_recursive_absolute(new_directory.path_join("MIDI"))
+	
+	# ROTH.EXE
+	DirAccess.copy_absolute(roth_exe, new_directory.path_join("ROTH.EXE"))
+	var md5_sum: String = FileAccess.get_md5(new_directory.path_join("ROTH.EXE"))
+	if (md5_sum == "f0f93c7931b9a678469095d3d7f54c04" or
+			md5_sum == "c11ab446c6d92e4e89d557864aa62997"):
+		ROTHPatch._patch_file(new_directory.path_join("ROTH.EXE"), ROTHPatch.DEV_MODE_PATCH)
+		ROTHPatch._patch_file(new_directory.path_join("ROTH.EXE"), ROTHPatch.SHIFT_RUN_PATCH)
+	elif (md5_sum == "d56e7641e8f5d4ec3144bb1c140a7677" or
+			md5_sum == "f588469eb868373a339bebb5fba5a9bb"):
+		pass
+	else:
+		push_error("Unknown md5 checksum on roth.exe: md5_sum")
+		return false
+	
+	# Patch the EXE to read the GDV files from G:\
+	ROTHPatch._patch_file(new_directory.path_join("ROTH.EXE"), ROTHPatch.GDV_DIRECTORY_PATCH, md5_sum)
+	# Patch the EXE to read the dbase/backdrop/icons files from D:\
+	ROTHPatch._patch_file(new_directory.path_join("ROTH.EXE"), ROTHPatch.FILES_DIRECTORY_PATCH, md5_sum)
+	
+	# Empty filelist
+	var filelist_file := FileAccess.open(new_directory.path_join("DATA/FILELIST.TXT"), FileAccess.WRITE)
+	filelist_file.close()
+	DirAccess.copy_absolute(dos4gw, new_directory.path_join("DOS4GW.EXE"))
+	DirAccess.copy_absolute(hmidet_386, new_directory.path_join("DIGI/HMIDET.386"))
+	DirAccess.copy_absolute(hmidrv_386, new_directory.path_join("DIGI/HMIDRV.386"))
+	DirAccess.copy_absolute(drum, new_directory.path_join("MIDI/DRUM.BNK"))
+	DirAccess.copy_absolute(hmimdrv_386, new_directory.path_join("MIDI/HMIMDRV.386"))
+	DirAccess.copy_absolute(melodic, new_directory.path_join("MIDI/MELODIC.BNK"))
+	ROTHInstallation.write_config_ini(new_directory.path_join("CONFIG.INI"), false)
+	ROTHInstallation.write_roth_ini(new_directory.path_join("ROTH.INI"))
+	
+	return true
