@@ -4716,7 +4716,7 @@ func get_map_infos(das_packs: Array) -> Array:
 			var map_info: Dictionary = {
 				"name": line_split[0].get_file().to_upper(),
 				"filepath": get(line_split[0].get_file().to_lower()),
-				"vanilla": true,
+				"vanilla": self,
 			}
 			for das_info: Dictionary in das_packs:
 				if line_split[1].get_file().to_upper() == das_info.filepath.get_basename().get_file().to_upper():
